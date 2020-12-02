@@ -1,40 +1,178 @@
+
+/* DEBUGGS */
+
+.h-100{
+  height: 100px;
+}
+.h-200{
+  height: 200px;
+}
+.h-100{
+  height: 100px;
+}
+
+.bcc-aqua{
+  background-color: aqua
+}
+.bcc-dodgerblue{
+  width:100%;
+  background-color: dodgerblue
+}
+.bcc-pink{
+  background-color: pink
+}
+.bcc-orange{
+  background-color: orange
+}
+
+.aliceblue{
+  background-color: aliceblue
+}
+
+.bisque{
+  background-color: bisque
+}
+
+/* general */
  *{
    margin:0;
    padding:0;
    box-sizing: border-box;
  }
-
+ body{
+   font-family: 'Montserrat', sans-serif;
+   /* color:white; */
+ }
 .general-container{
   width:100%;
   height:100vh;
   display:flex;
 }
- .main-nav{
-   width:16vw;
-   height:100vh;
+
+/* main-nav */
+
+.main-nav-wrapper{
+   width:250px;
+   height:85vh;
    position:fixed;
+   left:0;
    z-index: 1;
    background-color: slateblue;
- }
+}
 
- .main-content{
-   width:calc(100% - 16vw);
-   height:100vh;
-   background-color: yellow;
- }
+.main-nav{
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   margin-left:1.5vw;
 
- .banner-upgrade{
-   width: 100%;
-   height:15vh;
+}
+
+.main-nav a{
+  text-decoration: none;
+  color:white;
+
+}
+
+.logo{
+  width:80%;
+}
+
+.header-main-nav{
+  display:flex;
+  flex-direction:column;
+}
+
+.header-main-nav * img{
+  height:20px;
+  vertical-align: middle;
+}
+
+.playlist h3{
+  text-transform:uppercase;
+}
+
+.playlist i{
+  /* color: */
+  font-size: 7vh;
+}
+
+
+
+/* main-content */
+
+.main-content{
+ width: calc(100% - 250px);
+ margin-left:250px;
+}
+
+.banner-upgrade{
+   width: calc(100% - 250px);
+   height:10vh;
    position:fixed;
+   top:0;
+   right:0;
    background-color: lightgreen;
- }
+}
+.core{
+  /* width:calc(100% - 250px); */
+  height:100vh;
+  background-color: yellow;
+  margin-top:10vh;
+}
 
- footer{
+
+.core-nav{
+  /* width:83.999vw; */
+  height:10vh;
+
+}
+
+
+
+footer{
    width:100%;
    height:15vh;
    position:fixed;
    bottom:0;
    z-index: 2;
    background-color: grey;
+}
+
+
+/* media query */
+@media screen and (min-width:1201px){
+  .lg-none{
+    display:none;
+  }
+}
+
+ /* md */
+@media screen and (min-width:993px), (max-width:1200px){
+  .md-none{
+    display:none;
+  }
+}
+
+/* s */
+@media screen and (min-width:768px), (max-width:992px){
+ .s-none{
+   display:none;
  }
+}
+
+/* xs */
+@media screen and (max-width:568px), (max-width:767px){
+  .xs-none{
+    display:none;
+  }
+
+  .general-container .main-nav-werapper .main-nav .logo .fav-logo{
+    font-size: 3vh;
+  }
+
+
+
+
+
+}
