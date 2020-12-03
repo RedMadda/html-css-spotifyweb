@@ -15,40 +15,66 @@
     <div class="general-container">
 
      <!-- beginn.main-nav -->
-     <div class="main-nav-wrapper ">
-     <nav class="main-nav scroll">
+     <div class="main-nav-wrapper  ">
+       <nav class="main-nav">
 
-       <!-- logo -->
-       <div class="logo">
-         <img src="img/logo.svg" class="xs-none" alt="Logo Spotify">
-         <img src="img/favicon.ico" class="fav-logo s-none md-none lg-none" alt="Logo Spotify Small">
-       </div>
-
-       <!-- beginn. header-nav -->
-       <div class="header-main-nav">
-
-           <a href="#"><img src="img/home.svg" alt="House"><span class="xs-none">Home</span></a>
-           <a href="#"><img src="img/search.svg" alt="Search"> <span  class="xs-none">Cerca</span></a>
-           <a href="#"><img src="img/libreria.svg" alt="library"><span  class="xs-none"> La tua libreria</span></a>
-       </div>
-
-       <!-- /header-nav -->
+         <!-- logo -->
+         <div class="logo">
+           <img src="img/logo.svg" class="xs-none" alt="Logo Spotify">
+           <img src="img/logo-small.svg" class="xs-visible " alt="Logo Small">
+         </div>
 
 
+         <!-- beginn. header-nav -->
+         <div class="header-main-nav bcc-aqua flex ">
 
-       <!-- beginn.playlist -->
-       <div class="playlist h-100 bcc-pink">
-         <h3>playlist</h3>
-         <div class="crea">Crea Playlist</div>
-       </div>
-       <!-- /playlist -->
+             <a href="#"><img src="img/home.svg" alt="House"><span class="xs-none">home</span></a>
+             <a href="#"><img src="img/search.svg" alt="Search"> <span  class="xs-none">cerca</span></a>
+             <a href="#"><img src="img/libreria.svg" alt="library"><span  class="xs-none"> La tua libreria</span></a>
+         </div>
 
-       <!-- beginn.main-nav-footer -->
-       <div class="footer-main-nav h-100 bcc-dodgerblue"></div>
-       <!-- /main-nav-footer -->
-     </nav>
-     <!-- /main-nav -->
-     </div>
+         <!-- /header-nav -->
+
+
+
+         <!-- beginn.playlist / footer -->
+         <div class="playlist-footer-wrapper">
+         <div class="crea-playlist bcc-pink">
+           <h3>playlist</h3>
+           <div class="crea-wrapper"><i class="far fa-plus-square"><span class="crea">&nbsp;crea playlist</span></i></div>
+         </div>
+
+         <div class="main-nav-scroll bcc-orange flex">
+
+           <div class="playlist-names">nome playlist</div>
+           <div class="playlist-names">nome playlist</div>
+           <div class="playlist-names">nome playlist</div>
+           <div class="playlist-names">nome playlist</div>
+           <div class="playlist-names">nome playlist</div>
+           <div class="playlist-names">nome playlist</div>
+           <div class="playlist-names">nome playlist</div>
+
+           <div class="main-nav-footer bisque">
+             <div class="footer-line">
+               <img src="img/download.svg" alt="Download Symbol">
+               <span>&nbsp;installa app</span></div>
+             <hr>
+             <div class="footer-line">
+               <img src="img/profile.svg" alt="Profile avatar">
+               <span>&nbsp;john doe</span>
+             </div>
+           </div>
+           <!-- /main-nav-footer -->
+
+         </div>
+        <!-- /scroll -->
+        </div>
+
+
+
+       </nav>
+       <!-- /main-nav -->
+      </div>
 
      <!-- beginn.main-content -->
      <div class="main-content">
@@ -65,17 +91,67 @@
          <!-- /core-nav -->
 
          <!-- beginn.I section -->
-         <section id="recent" class=" h-200 bcc-orange">
+         <section id="recent" >
+         <h2>Recently Played</h2>
+         <div class="boxes-wrapper flex">
 
+           <div class="box aliceblue">
+             <img src="img/metal_lifting.jpg" alt="Metal cover">
+               <h4>Heavy Metal</h4>
+               <small>Subtitle</small>
+           </div>
+
+           <div id="strange" class="box">
+             <img src="img/stranger.jpeg" alt="Stranger Things cover">
+             <h4 class="long">Stranger Things, Vol&#44;1 &#40;a Netflix Original Soundtrack&#41;</h4>
+             <small>Kyle Dixon e Micheal Keine</small>
+           </div>
+
+           <div class="box">
+             <img src="img/aquietplace.jpeg" alt="A Quite Place cover">
+             <h4>A quiet place</h4>
+             <small>Subtitle</small>
+           </div>
+
+           <div class="box">
+             <img src="img/split.jpeg" alt="Split cover">
+               <h4>Split</h4>
+               <small>Subtitle</small>
+           </div>
+
+           <div class="box">
+             <img src="img/cure.jpeg" alt="Cure for Wellness cover">
+               <h4>A cure for wellness</h4>
+               <small>Subtitle</small>
+           </div>
+
+           <div class="box">
+             <img src="img/sinister.jpeg" alt="Sinister cover">
+               <h4>Sinister</h4>
+               <small>Subtitle</small>
+           </div>
+         </div>
          </section>
          <!-- /Isection -->
 
          <!-- beginn.II section -->
-         <section id="for" class=" h-200 aliceblue"></section>
+         <section id="for" class=" h-200 aliceblue">
+           <h2>Creato per John Doe</h2>
+             <div class="boxes-wrapper flex">
+             <div class="box h-100 aliceblue"></div>
+             <div class="box h-100 bisque"></div>
+           </div>
+          </section>
          <!-- /Isection -->
 
          <!-- beginn.III section -->
-         <section id="popular" class=" h-200 bisque"></section>
+         <section id="popular" class=" h-200 bisque">
+           <h2>Artisti popolari</h2>
+           <div class="boxes-wrapper flex">
+             <div class="box h-100 aliceblue"></div>
+             <div class="box h-100 bisque"></div>
+           </div>
+         </section>
          <!-- /III section -->
        </div>
        <!-- /core -->
