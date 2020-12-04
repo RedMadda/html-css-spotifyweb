@@ -1,172 +1,115 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/3a8210a31e.js"></script>
-  <title>My Spotify</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main>
-    <div class="general-container">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <title>My Spotify</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+ </head>
+ <body>
 
-     <!-- beginn.main-nav -->
-     <div class="main-nav-wrapper  ">
-       <nav class="main-nav">
+  <!-- beginn.main -->
+  <main class="flex">
 
-         <!-- logo -->
-         <div class="logo">
-           <img src="img/logo.svg" class="xs-none" alt="Logo Spotify">
-           <img src="img/logo-small.svg" class="xs-visible " alt="Logo Small">
-         </div>
+    <!-- beginn.main-nav -->
+    <nav id="main-nav" class="yellow"></nav>
+    <!-- /.main-nav -->
 
-
-         <!-- beginn. header-nav -->
-         <div class="header-main-nav bcc-aqua flex ">
-
-             <a href="#"><img src="img/home.svg" alt="House"><span class="xs-none">home</span></a>
-             <a href="#"><img src="img/search.svg" alt="Search"> <span  class="xs-none">cerca</span></a>
-             <a href="#"><img src="img/libreria.svg" alt="library"><span  class="xs-none"> La tua libreria</span></a>
-         </div>
-
-         <!-- /header-nav -->
+    <!-- beginn.banner-upgrade -->
+    <div id="banner-upgrade" class="AntiqueWhite" >
+      <div class="btn-upgrade">effettua l&#39;upgrade</div>
+    </div>
+    <!-- /.banner-upgrade -->
 
 
+    <!-- beginn.main content -->
+    <div class="main-content ">
 
-         <!-- beginn.playlist / footer -->
-         <div class="playlist-footer-wrapper">
-         <div class="crea-playlist bcc-pink">
-           <h3>playlist</h3>
-           <div class="crea-wrapper"><i class="far fa-plus-square"><span class="crea">&nbsp;crea playlist</span></i></div>
-         </div>
+      <!-- beginn. nav-main-content -->
+      <div class="nav-content Aquamarine"></div>
+      <!-- / nav-main-content -->
 
-         <div class="main-nav-scroll bcc-orange flex">
+      <!-- beginn.Isection -->
+      <section>
+        <h2>Recently played</h2>
 
-           <div class="playlist-names">nome playlist</div>
-           <div class="playlist-names">nome playlist</div>
-           <div class="playlist-names">nome playlist</div>
-           <div class="playlist-names">nome playlist</div>
-           <div class="playlist-names">nome playlist</div>
-           <div class="playlist-names">nome playlist</div>
-           <div class="playlist-names">nome playlist</div>
+        <div class="row flex">
 
-           <div class="main-nav-footer bisque">
-             <div class="footer-line">
-               <img src="img/download.svg" alt="Download Symbol">
-               <span>&nbsp;installa app</span></div>
-             <hr>
-             <div class="footer-line">
-               <img src="img/profile.svg" alt="Profile avatar">
-               <span>&nbsp;john doe</span>
-             </div>
+         <div class="box-cover BlueViolet">
+           <img src="img/metal_lifting.jpg" alt="Metal cover">
+           <div class="cover-text">
+             <h4>heavy metal</h4>
+             <small>subtitle</small>
            </div>
-           <!-- /main-nav-footer -->
-
          </div>
-        <!-- /scroll -->
+
+         <div class="box-cover">
+           <img src="img/stranger.jpeg" alt="Stranger Things cover">
+           <div class="cover-text">
+             <h4>Stranger things Vol.1 &#40;a Netflix original soundtrack&#41; </h4>
+             <small>Kyle Dixon e Micheal Stein</small>
+           </div>
+         </div>
+
+         <div class="box-cover">
+           <img src="img/aquietplace.jpeg" alt="Aquietplace cover">
+           <div class="cover-text">
+             <h4>heavy metal</h4>
+             <small>subtitle</small>
+           </div>
+         </div>
+
+         <div class="box-cover">
+           <img src="img/split.jpeg" alt="Split cover">
+           <div class="cover-text">
+             <h4>heavy metal</h4>
+             <small>subtitle</small>
+           </div>
+         </div>
+
+         <div class="box-cover">
+           <img src="img/cure.jpeg" alt="A cure for wellness cover">
+           <div class="cover-text">
+             <h4>heavy metal</h4>
+             <small>subtitle</small>
+           </div>
+         </div>
+
+         <div class="box-cover">
+           <img src="img/sinister.jpeg" alt="Sinister">
+           <div class="cover-text">
+             <h4>heavy metal</h4>
+             <small>subtitle</small>
+           </div>
+         </div>
+
         </div>
+        <!-- /Irow -->
+
+      </section>
+      <!-- /.Isection -->
+
+      <!-- beginn.IIsection -->
+      <section></section>
+      <!-- /.IIsection -->
+
+      <!-- beginn.IIIsection -->
+      <section></section>
+      <!-- /.IIIsection -->
+
+    </div>
+    <!-- /.main content -->
+
+  </main>
+  <!-- /.main -->
+
+  <!-- beginn.footer -->
+  <footer>mamma mia, here we are again</footer>
+  <!-- /.footer -->
 
 
-
-       </nav>
-       <!-- /main-nav -->
-      </div>
-
-     <!-- beginn.main-content -->
-     <div class="main-content">
-
-       <!-- beginn.upgrade-bann -->
-       <div class="banner-upgrade"></div>
-       <!-- /upgrade-bann -->
-
-       <!-- beginn.core -->
-       <div class="core">
-
-         <!-- beginn.core-nav -->
-         <nav class="core-nav h-100 bcc-dodgerblue"></nav>
-         <!-- /core-nav -->
-
-         <!-- beginn.I section -->
-         <section id="recent" >
-         <h2>Recently Played</h2>
-         <div class="boxes-wrapper flex">
-
-           <div class="box aliceblue">
-             <img src="img/metal_lifting.jpg" alt="Metal cover">
-               <h4>Heavy Metal</h4>
-               <small>Subtitle</small>
-           </div>
-
-           <div id="strange" class="box">
-             <img src="img/stranger.jpeg" alt="Stranger Things cover">
-             <h4 class="long">Stranger Things, Vol&#44;1 &#40;a Netflix Original Soundtrack&#41;</h4>
-             <small>Kyle Dixon e Micheal Keine</small>
-           </div>
-
-           <div class="box">
-             <img src="img/aquietplace.jpeg" alt="A Quite Place cover">
-             <h4>A quiet place</h4>
-             <small>Subtitle</small>
-           </div>
-
-           <div class="box">
-             <img src="img/split.jpeg" alt="Split cover">
-               <h4>Split</h4>
-               <small>Subtitle</small>
-           </div>
-
-           <div class="box">
-             <img src="img/cure.jpeg" alt="Cure for Wellness cover">
-               <h4>A cure for wellness</h4>
-               <small>Subtitle</small>
-           </div>
-
-           <div class="box">
-             <img src="img/sinister.jpeg" alt="Sinister cover">
-               <h4>Sinister</h4>
-               <small>Subtitle</small>
-           </div>
-         </div>
-         </section>
-         <!-- /Isection -->
-
-         <!-- beginn.II section -->
-         <section id="for" class=" h-200 aliceblue">
-           <h2>Creato per John Doe</h2>
-             <div class="boxes-wrapper flex">
-             <div class="box h-100 aliceblue"></div>
-             <div class="box h-100 bisque"></div>
-           </div>
-          </section>
-         <!-- /Isection -->
-
-         <!-- beginn.III section -->
-         <section id="popular" class=" h-200 bisque">
-           <h2>Artisti popolari</h2>
-           <div class="boxes-wrapper flex">
-             <div class="box h-100 aliceblue"></div>
-             <div class="box h-100 bisque"></div>
-           </div>
-         </section>
-         <!-- /III section -->
-       </div>
-       <!-- /core -->
-
-     </div>
-     <!-- /main-content -->
-  </div>
-
-   <!-- /general-cont -->
- </main>
-
-   <!-- beginn.footer -->
-   <footer></footer>
-   <!-- /footer -->
-
-
-</body>
-</html>
+ </body>
+ </html>
