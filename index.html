@@ -1,5 +1,5 @@
  <!DOCTYPE html>
- <html lang="en">
+ <html lang="it">
  <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
    <title>My Spotify</title>
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/3a8210a31e.js" crossorigin="anonymous"></script>
  </head>
  <body>
 
@@ -15,12 +16,66 @@
   <main class="flex">
 
     <!-- beginn.main-nav -->
-    <nav id="main-nav" class="yellow"></nav>
+    <nav id="main-nav" class="CornflowerBlue">
+
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo Spotify">
+      </div>
+
+      <!-- beginn.header-main-nav -->
+      <div class="main-nav-header">
+
+       <div class="home">
+         <img src="img/home.svg" alt="Casa">
+         <span>home</span>
+       </div>
+
+       <div class="search">
+         <img src="img/search.svg" alt="Cerca">
+         <span>cerca</span>
+       </div>
+
+       <div class="library">
+         <img src="img/libreria.svg" alt="Libreria">
+         <span>La tua libreria</span>
+       </div>
+
+      </div>
+      <!-- /.header-main-nav -->
+
+      <!-- beginn.crea playlist -->
+      <div class="crea">
+        <h2 class="uppercase">playlist</h2>
+        <i class="fas fa-plus-square"></i>
+        <span>&nbsp;crea playlist</span>
+      </div>
+      <!-- /.crea playlist -->
+
+      <!-- beginn.scroll -->
+      <div class="scroll-main-nav">
+
+        <!-- beginn.playlist list -->
+        <ul id="made-playlist" class="h200 CadetBlue">
+          <li><a href="#">nome playlist</a></li>
+          <li><a href="#">nome playlist</a></li>
+          <li><a href="#">nome playlist</a></li>
+          <li><a href="#">nome playlist</a></li>
+          <li><a href="#">nome playlist</a></li>
+          <li><a href="#">nome playlist</a></li>
+          <li><a href="#">nome playlist</a></li>
+        </ul>
+        <!-- /.playlist list -->
+
+        <footer class="h200 Chocolate"></footer>
+
+      </div>
+      <!-- /scroll main nav -->
+    </nav>
     <!-- /.main-nav -->
 
     <!-- beginn.banner-upgrade -->
     <div id="banner-upgrade" class="AntiqueWhite" >
-      <div class="btn-upgrade">effettua l&#39;upgrade</div>
+      <div class="btn-upgrade uppercase">effettua l&#39;upgrade</div>
     </div>
     <!-- /.banner-upgrade -->
 
@@ -33,12 +88,12 @@
       <!-- / nav-main-content -->
 
       <!-- beginn.Isection -->
-      <section>
+      <section id="recent">
         <h2>Recently played</h2>
 
         <div class="row flex">
 
-         <div class="box-cover BlueViolet">
+         <div class="box-cover">
            <img src="img/metal_lifting.jpg" alt="Metal cover">
            <div class="cover-text">
              <h4>heavy metal</h4>
@@ -93,11 +148,53 @@
       <!-- /.Isection -->
 
       <!-- beginn.IIsection -->
-      <section></section>
+      <section id="for">
+
+        <h2>Creato per John Doe</h2>
+        <small>Pi&ugrave; ascolti&#44; Pi&ugrave; saranno accurati i suggerimenti </small>
+
+        <div class="row flex">
+
+          <div class="box-cover">
+            <img src="img/radar.jpeg" alt="Cover playlist">
+            <div class="cover-text">
+              <h4>Release radar</h4>
+            </div>
+          </div>
+
+          <div class="box-cover">
+            <img src="img/mixdaily.jpeg" alt="Cover daily playlist">
+            <div class="cover-text">
+              <h4>Daily playlist</h4>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- /.IIsection -->
 
       <!-- beginn.IIIsection -->
-      <section></section>
+      <section id="popular">
+        <h4>Artisti pi&ugrave; popolari</h4>
+        <small>Pi&ugrave; ascolti&#44; Pi&ugrave; saranno accurati i suggerimenti </small>
+
+        <div class="row flex">
+
+          <div class="box-cover">
+            <img src="img/youg.jpeg" alt="Cover Lana del Rey">
+            <div class="cover-text">
+              <h4>Lana del Rey</h4>
+            </div>
+          </div>
+
+          <div class="box-cover">
+            <img src="img/einaudi.jpeg" alt="Cover Ludovico Einaudi">
+            <div class="cover-text">
+              <h4>Ludovico Einaudi</h4>
+            </div>
+          </div>
+
+        </div>
+      </section>
       <!-- /.IIIsection -->
 
     </div>
