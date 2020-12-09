@@ -45,6 +45,18 @@ body{
   padding-left:10px;
 }
 
+.main-nav .main-nav-header a,
+
+#made-playlist a,
+{
+  text-decoration: none;
+  color:#6e6e6e;
+}
+
+.nav-content ul a{
+  text-decoration: none;
+  color:#6e6e6e;
+}
 
 /* main-nav */
 
@@ -59,8 +71,8 @@ body{
 }
 
 /* chiedere PERCHE NON FUNZIONA */
-.main-nav-container :not(.library),
-.main-nav-container :not(.lowercase){
+.main-nav-container div:not(.library),
+.main-nav-container div:not(.lowercase){
  text-transform:capitalize;
 }
 
@@ -114,11 +126,6 @@ body{
 #made-playlist li{
   list-style: none;
   margin:5px 0;
-}
-
-#made-playlist a{
-  text-decoration: none;
-  color:#6e6e6e;
 }
 
 .main-nav-footer{
@@ -199,10 +206,7 @@ body{
   margin:0 10px;
 }
 
-.nav-content ul a{
-  text-decoration: none;
-  color:#6e6e6e;
-}
+
 
 
 .main-content section{
