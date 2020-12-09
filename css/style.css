@@ -71,8 +71,7 @@ body{
 }
 
 /* chiedere PERCHE NON FUNZIONA */
-.main-nav-container div:not(.library),
-.main-nav-container div:not(.lowercase){
+.main-nav-container div:not(.library):not(.footer-line){
  text-transform:capitalize;
 }
 
