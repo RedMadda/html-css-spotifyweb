@@ -244,11 +244,6 @@ section h2{
   border-radius: 50%;
 }
 
-
-
-
-
-
 /* footer */
 
 footer{
@@ -260,24 +255,23 @@ footer{
   right:0;
   z-index:3;
   align-items: center;
-  justify-content: space-between;
   color:white;
   background-color: #282828;
 }
 
 .footer-left{
-  width:18%;
+  width:200px;
   justify-content: space-between;
   align-items: center;
-
 }
+
 
 .cover-name{
   align-items: center;
 
 }
 .cover-name img{
-  height:60px;
+  height:40px;
 }
 
 .cover-name .name{
@@ -300,20 +294,21 @@ footer{
 /* center */
 
 .footer-center{
-  width:70%;
+  width: calc(100% - 400px);
   flex-direction: column;
   align-items: center;
 }
 
 .row-above{
-  width:25%;
+  width:100%;
   height:50%;
   align-items: center;
+  justify-content: center;
 }
 
 .row-above *{
   font-size:20px;
-  margin:10px;
+  padding:10px;
 }
 
 .row-above i#play{
@@ -322,9 +317,10 @@ footer{
 
 
 .row-below{
-  width:70%;
+  width:100%;
   height:50%;
- 
+  justify-content: center;
+
 }
 
 .row-below .time{
@@ -332,7 +328,7 @@ footer{
 }
 
 .row-below .vol-bar{
-  width:120%;
+  width:60%;
   height:4px;
   background-color: lightgrey;
 }
@@ -358,7 +354,8 @@ footer{
 /* footer-right */
 
 .footer-right{
-  width:18%;
+  width:200px;
+  justify-content: flex-end;
 }
 
 .i-wrapper{
@@ -426,8 +423,38 @@ footer{
     margin-bottom:40px;
   }
 
-  .row{
+  /* footer */
+
+  .footer-left {
+    width:calc(100% / 5);
+    justify-content: flex-start;
   }
+
+  .footer-left .like-option .i-wrapper{
+    flex-direction: column;
+
+  }
+
+ .footer-center{
+   width:calc(100% / 5 * 3);
+ }
+
+.footer-center .row-abo
+ .footer-center .row-below .vol-bar{
+   width:100%
+ }
+
+ .footer-right{
+   width:calc(100% / 5);
+ }
+
+ .footer-right i{
+   padding:5px;
+ }
+
+ .footer-right .vol-bar{
+   margin-right:5px;
+ }
 }
 
 @media screen and (max-width:568px){
@@ -471,9 +498,25 @@ footer{
     width:calc(100% - 50px);
 }
 
+/* footer */
 
+footer .row-above *{
+  font-size:15px;
+  padding:5px;
 }
 
+.row-above i#play{
+  font-size:25px;
+}
+
+.row-below .time{
+  font-size:10px;
+}
+
+.footer-right i{
+  font-size:10px;
+}
+}
 
 
 
