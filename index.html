@@ -30,27 +30,26 @@
          </div>
 
          <!-- beginn.header-main-nav -->
-         <div class="main-nav-header pad-10 height-hidden">
+         <div class="main-nav-header pad-10 height-hidden flex">
 
            <div class="home">
              <a href="#">
               <img src="img/home.svg" alt="Casa">
-              <span class="xs-hidden">home</span>
-            </a>
-
-           </div>
+              <span class="xs-hidden">Home</span>
+             </a>
+            </div>
 
            <div class="search">
              <a href="#">
                <img src="img/search.svg" alt="Cerca">
-               <span class="xs-hidden">cerca</span>
+               <span class="xs-hidden">Cerca</span>
              </a>
            </div>
 
            <div class="library">
              <a href="#">
                <img src="img/libreria.svg" alt="Libreria">
-               <span class="xs-hidden">La tua libreria</span>
+               <span id="books" class=" xs-hidden">La tua libreria</span>
              </a>
            </div>
 
@@ -85,6 +84,7 @@
 
         <div class="main-nav-footer pad-10">
           <div class="sticky">
+
            <div class="footer-line lowercase">
              <a href="#">
                <img class="xs-visible" src="img/download.svg" alt="Download">
@@ -96,7 +96,7 @@
 
            <div class="footer-line">
              <img class="xs-visible" src="img/profile.svg" alt="Avatar profilo">
-             <span class=" ddd xs-hidden">john doe</span>
+             <span class="xs-hidden">john doe</span>
            </div>
           </div>
         </div>
@@ -138,15 +138,21 @@
         <div class="row flex">
 
          <div class="box-cover">
-           <img src="img/metal_lifting.jpg" alt="Metal cover">
-           <div class="cover-text">
-             <h4>Heavy Metal</h4>
-             <small>subtitle</small>
+           <div class="layover">
+             <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+             <img src="img/metal_lifting.jpg" alt="Metal cover">
            </div>
+          <div class="cover-text">
+           <h4>Heavy Metal</h4>
+           <small>subtitle</small>
+          </div>
          </div>
 
          <div class="box-cover">
-           <img src="img/stranger.jpeg" alt="Stranger Things cover">
+           <div class="layover">
+             <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+             <img src="img/stranger.jpeg" alt="Stranger Things cover">
+           </div>
            <div class="cover-text">
              <h4>Stranger things Vol.1 &#40;a Netflix original soundtrack&#41; </h4>
              <small>Kyle Dixon e Micheal Stein</small>
@@ -154,7 +160,10 @@
          </div>
 
          <div class="box-cover">
-           <img src="img/aquietplace.jpeg" alt="Aquietplace cover">
+           <div class="layover">
+             <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+             <img src="img/aquietplace.jpeg" alt="Aquietplace cover">
+           </div>
            <div class="cover-text">
              <h4>A quite place</h4>
              <small>subtitle</small>
@@ -162,7 +171,10 @@
          </div>
 
          <div class="box-cover">
-           <img src="img/split.jpeg" alt="Split cover">
+           <div class="layover">
+             <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+             <img src="img/split.jpeg" alt="Split cover">
+           </div>
            <div class="cover-text">
              <h4>Split</h4>
              <small>subtitle</small>
@@ -170,7 +182,10 @@
          </div>
 
          <div class="box-cover">
-           <img src="img/cure.jpeg" alt="A cure for wellness cover">
+           <div class="layover">
+             <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+             <img src="img/cure.jpeg" alt="A cure for wellness cover">
+           </div>
            <div class="cover-text">
              <h4>A cure for wellness</h4>
              <small>subtitle</small>
@@ -178,7 +193,10 @@
          </div>
 
          <div class="box-cover">
-           <img src="img/sinister.jpeg" alt="Sinister">
+           <div class="layover">
+             <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+             <img src="img/sinister.jpeg" alt="Sinister">
+           </div>
            <div class="cover-text">
              <h4>Sinister</h4>
              <small>subtitle</small>
@@ -200,14 +218,20 @@
         <div class="row flex">
 
           <div class="box-cover">
-            <img src="img/radar.jpeg" alt="Cover playlist">
+            <div class="layover">
+              <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+              <img src="img/radar.jpeg" alt="Cover playlist">
+            </div>
             <div class="cover-text">
               <h4>Release radar</h4>
             </div>
           </div>
 
           <div class="box-cover">
+            <div class="layover">
+              <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
             <img src="img/mixdaily.jpeg" alt="Cover daily playlist">
+            </div>
             <div class="cover-text">
               <h4>Daily playlist</h4>
             </div>
@@ -224,14 +248,20 @@
         <div class="row flex">
 
           <div class="box-cover">
-            <img src="img/youg.jpeg" alt="Cover Lana del Rey">
+            <div class="layover">
+              <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+              <img src="img/youg.jpeg" alt="Cover Lana del Rey">
+            </div>
             <div class="cover-text">
               <h4>Lana del Rey</h4>
             </div>
           </div>
 
           <div class="box-cover">
-            <img src="img/einaudi.jpeg" alt="Cover Ludovico Einaudi">
+            <div class="layover">
+              <a class="play-cover" href=""><i class="far fa-play-circle"></i></a>
+              <img src="img/einaudi.jpeg" alt="Cover Ludovico Einaudi">
+            </div>
             <div class="cover-text">
               <h4>Ludovico Einaudi</h4>
             </div>
@@ -262,8 +292,8 @@
 
      <div class="like-option">
        <div class="i-wrapper flex">
-         <i class="far fa-heart"></i>
-         <i class="far fa-folder"></i>
+         <a href="#"><i class="far fa-heart"></i></a>
+         <a href="#"><i class="far fa-folder"></i></a>
        </div>
      </div>
 
@@ -285,7 +315,11 @@
         <span class="time">0&#58;25</span>
 
         <div class="vol-bar b-rad">
-          <div class="vol-bar-lightgrey b-rad"><div class="vol-bar-grey b-rad"></div></div>
+          <div class="vol-bar-lightgrey b-rad">
+            <div class="vol-bar-grey b-rad">
+              <input type="range" min="1" max="100" value="100" class="green-bar">
+            </div>
+          </div>
        </div>
 
        <span class="time">4&#58;25</span>
@@ -305,7 +339,12 @@
       </div>
 
       <div class="vol-bar b-rad">
-        <div class="vol-bar-lightgrey b-rad"><div class="vol-bar-grey b-rad"></div></div>
+        <div class="vol-bar-lightgrey b-rad">
+          <div class="vol-bar-grey b-rad">
+            <input type="range" min="1" max="100" value="100" class="green-bar">
+          </div>
+        </div>
+
      </div>
    </div>
     <!-- /.footer-right -->
