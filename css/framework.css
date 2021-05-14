@@ -1,0 +1,203 @@
+/* SUGGESTED*/
+LINE-HEIGTH///TEST-ALIGN
+
+/*FLEXBOX ITEM PROPERTY TO TRY
+I) order;
+II) flex basis;
+III) grow, shrink, basis;
+.item {
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
+IV) align-self/items;
+.item {
+  align-self/items: auto | flex-start | flex-end | center | baseline | stretch;
+}*/
+
+
+/*PARENT property to try:
+
+I) .container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+
+II) Flex-wrap:
+.container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+} 
+
+IV) Flow-wrap:
+flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+V) Justify-content:
+.flex-container {
+  display: flex;
+  justify-content: center / flex-start-end / space-around-between / ;
+}
+
+2] ALIGN-ITEMS  --> DA USARE PER SPOTIFY!!!!!!!!!!!!!
+
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: center / flex-start-end / baseline; / ;
+}
+
+3] ALIGN-CONTENT:
+
+I) (+flex-wrap --> wrap);
+  align-content: space-between_around / stretch / center (center leftBorder) / flex-start_end( / 
+ left-margin)
+
+ Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered:
+*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.containerMobile {
+    /* è la versione mobile e lasciamo il container al 100% */
+    width: 100%;
+    margin: 0 auto;
+} 
+
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    flex: 0 0 auto;
+} 
+  /* 12 System */
+.col-xs {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.col-xs-1 {
+    flex-basis: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+}
+.col-xs-2 {
+    flex-basis: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
+}
+.col-xs-3 {
+    flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+}
+.col-xs-4 {
+    flex-basis: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+}
+.col-xs-5 {
+    flex-basis: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+}
+.col-xs-6 {
+    flex-basis: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+}
+.col-xs-7 {
+    flex-basis: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+}
+.col-xs-8 {
+    flex-basis: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+}
+.col-xs-9 {
+    flex-basis: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+}
+.col-xs-10 {
+    flex-basis: calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
+}
+.col-xs-11 {
+    flex-basis: calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
+}
+.col-xs-12 {
+    flex-basis: calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
+}
+
+.col-xs-offset-1 {
+    margin-left: calc((100% / 12) * 1);
+}
+.col-xs-offset-2 {
+    margin-left: calc((100% / 12) * 2);
+}
+.col-xs-offset-3 {
+    margin-left: calc((100% / 12) * 3);
+}
+.col-xs-offset-4 {
+    margin-left: calc((100% / 12) * 4);
+}
+.col-xs-offset-5 {
+    margin-left: calc((100% / 12) * 5);
+}
+.col-xs-offset-6 {
+    margin-left: calc((100% / 12) * 6);
+}
+.col-xs-offset-7 {
+    margin-left: calc((100% / 12) * 7);
+}
+.col-xs-offset-8 {
+    margin-left: calc((100% / 12) * 8);
+}
+.col-xs-offset-9 {
+    margin-left: calc((100% / 12) * 9);
+}
+.col-xs-offset-10 {
+    margin-left: calc((100% / 12) * 10);
+}
+.col-xs-offset-11 {
+    margin-left: calc((100% / 12) * 11);
+}
+
+.start-xs {
+    justify-content: flex-start;
+}
+
+.center-xs{
+    justify-content: center;
+}
+
+.end-xs {
+    justify-content: flex-end;
+}
+
+.around-xs {
+    justify-content: space-around;
+}
+.between-xs {
+    justify-content: space-between;
+}
+
+.top-xs{
+    align-items: flex-start;
+}
+
+.middle-xs{
+    align-items: center;
+}
+
+.bottom-xs {
+    align-items: flex-end;
+}
